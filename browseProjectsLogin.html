@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Browse Colab Projects</title>
+
+
+  <!-- jquery Fullpage Author
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage auto-height example." />
+    <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,auto-height,full-screen" />
+    <meta name="Resource-type" content="Document" />
+    -->
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+
+
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                verticalCentered: true,
+                sectionsColor: ['#f4f7e5'],
+                controlArrowColor: '#444847'
+            });
+        });
+    </script>
+
+    <style>
+    /* in file css styling */
+
+      h1{
+        font-size: 50px;
+        font-size: 3.5vw;
+      }
+
+
+      .title{
+        position: relative;
+        top: 10%;
+
+      }
+
+      .myContent{
+        position:relative;
+        overflow: visible;
+        padding-left: 4vw;
+        width: 90%;
+        overflow: hidden;
+      }
+
+
+      /* -- Logo -- */
+      .wrap{
+        height:8vw;
+        width:8vw;
+        float:left;
+        margin-top: 20px;
+        margin-left:20px;
+
+      }
+
+      .colabImg{
+
+        height: 100%;
+        width: 100%;
+
+      }
+
+
+      .row{
+        left: 15vw;
+        width:700px;
+        height:auto;
+        margin:400px;
+        float:left;
+      }
+
+      .splitLeft{
+        position: relative;
+        left:3vw;
+        top: 30%;
+        height:100%;
+        width:auto;
+        float:left;
+      }
+      .splitRight{
+        position: relative;;
+        height:auto;
+        width:75%;
+        /*background-color: grey;*/
+        float:left;
+      }
+      .imageBox{
+
+        height:9vw;
+        width:9vw;
+        /*background-color: #fff; placeholder*/
+      }
+
+      .fp-tableCell{
+        height:300px !important;
+        width:300px !important;
+      }
+
+      .textTop{
+        position:absolute;
+        margin-left: 3vw;
+
+      }
+
+      .textMid{
+        position:absolute;
+        margin-left: 3vw;
+        top:9vw;
+      }
+
+      .textBot{
+        position:absolute;
+        left:3vw;
+        top: 19vw;
+      }
+
+      h1, h2, h3{
+        font-size: 5vw;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5vw;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-right: 20px;
+        color: #444847;
+      }
+    </style>
+
+</head>
+
+<body>
+
+<div id="fullpage">
+
+  <!-- section starts -->
+  <div class="section" id="section0">
+    <div class="wrap">
+      <a href="Login.html"><img class ="colabImg" src ="img/logo.png"></a>
+    </div>
+    <h1 class="title">Browse Projects</h1>
+    <div class="slide" id="slide1"><!-- horizontal slide -->
+      <div class="myContent">
+        <div class = splitLeft>
+          <table>
+            <tr>
+              <td>
+                <ul>
+                  <div class = "imageBox">
+                    <img src ="img\test.png" class = imageBox>
+                  </div>
+                </ul>
+                <br>
+                <ul>
+                  <div class = "imageBox">
+                    <img src ="img\test.png" class = imageBox>
+                  </div>
+                </ul>
+                <br>
+                <ul>
+                  <div class = "imageBox">
+                    <img src ="img\test.png" class = imageBox>
+                  </div>
+                </table>
+              </div>
+              <!--Text -->
+            <div class ="splitRight">
+              <div class = textTop><p>This is an example of a test Colab Project. This is an example of a test Colab Project. This is an example of a test Colab Project. This is an example of a test Colab Project. </p></div>
+              <div class = textMid><p>This is an example of a test Colab Project. This is an example of a test Colab Project. This is an example of a test Colab Project. This is an example of a test Colab Project. </p></div>
+              <dic class = textBot><p>This is an example of a test Colab Project. This is an example of a test Colab Project. This is an example of a test Colab Project. This is an example of a test Colab Project. </p></div>
+            </div>
+
+            </div>
+
+            <!-- Next Page -->
+            <div class="slide" id="slide2"><!-- second horizontal slide -->
+
+
+                <div class="myContent">
+                  <div class = splitLeft>
+                    <table>
+                      <tr>
+                        <td>
+                          <ul>
+                            <div class = "imageBox">
+                              <img src ="img\test.png" class = imageBox>
+                            </div>
+                          </ul>
+                          <br>
+                          <ul>
+                            <div class = "imageBox">
+                              <img src ="img\test.png" class = imageBox>
+                            </div>
+                          </ul>
+                          <br>
+                          <ul>
+                            <div class = "imageBox">
+                              <img src ="img\test.png" class = imageBox>
+                            </div>
+                          </table>
+                        </div>
+                        <!--Text -->
+                      <div class ="splitRight">
+                        <div class = textTop><p>This is an example of a test Colab Project. This is an example of a test Colab Project. This is an example of a test Colab Project. This is an example of a test Colab Project. </p></div>
+                        <div class = textMid><p>This is an example of a test Colab Project. This is an example of a test Colab Project. This is an example of a test Colab Project. This is an example of a test Colab Project. </p></div>
+                        <dic class = textBot><p>This is an example of a test Colab Project. This is an example of a test Colab Project. This is an example of a test Colab Project. This is an example of a test Colab Project. </p></div>
+                      </div>
+
+
+                  <!-- section ends -->
+
+                </div>
+
+              </body>
+              </html>

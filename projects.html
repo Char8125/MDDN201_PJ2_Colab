@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>C O L A B</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage auto-height example." />
+    <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,auto-height,full-screen" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                verticalCentered: false,
+                anchors: ['firstPage', 'secondPage'],
+                sectionsColor: ['#f4f7e5'],
+                controlArrowColor:'black',
+
+                fitToSection: false,
+                autoScrolling: false
+            });
+        });
+    </script>
+
+    <style>
+    /* in file css styling */
+
+    body{
+      overflow: scroll;
+      background-color: #f4f7e5;
+    }
+
+    p{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 22px;
+      text-align: left;
+      margin-left: 20px;
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+
+    h1, h2, h3{
+      font-size: 40px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    h1{
+      font-size: 40px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .fp-tableCell{
+      height:300px !important;
+      width:300px !important
+      padding-top:0px;
+    }
+
+
+
+    .colabImg{
+
+      height: 100%;
+      width: 100%;
+    }
+
+
+      .myContent{
+        min-height: 300px;
+        height:90%;
+        overflow: auto;
+      }
+
+      .imageBox{
+        width:100%;
+        height:300px;
+
+      }
+
+
+
+      /* -- Logo -- */
+      .wrapLogo{
+        position: absolute;
+        display:flex;
+        height:8vw;
+        width:8vw;
+        float:left;
+        top:1vw !important;
+        margin-left:20px;
+
+      }
+
+      .wrap{
+        display: block;;
+        position:relative;
+        height:20vw;
+        width: 20vw;
+        float:left;
+        left:40%;
+
+      }
+      .footer{
+        position:relative;;
+        left:45%;
+
+      }
+
+      .imageWrap{
+        height:25vw;
+        width:25vw;
+      }
+
+      .colabImg{
+
+        height: 100%;
+        width: 100%;
+
+      }
+
+      .boxImg{
+        margin-top: 0px !important;
+        height: 60%;
+        width: 60%;
+
+      }
+
+      .textBox{
+        position: absolute;
+        width: 90% !important;
+        height: auto;
+        top:40%;
+        left:5%;
+      }
+
+      </style>
+
+</head>
+<body>
+<div id="fullpage">
+
+    <!-- section starts -->
+    <div class="section fp-auto-height-responsive" id="section0">
+      <div class="wrapLogo">
+        <a href="index.html"><img class ="colabImg" src ="img/logo.png"></a>
+      </div>
+
+       <div class="myContent">
+
+          <div class = "wrap">
+            <h1>Example Project</h1>
+            <div class= "myContent">
+                <div class="slide" id="slide1"><!-- horizontal slide -->
+                    <img class ="boxImg" src ="img/test.png">
+                </div>
+                <!-- Next Image -->
+                <div class="slide" id="slide2"><!-- second horizontal slide -->
+                  <img class ="boxImg" src ="img/test.png">
+                </div>
+            </div>
+
+            </div>
+            <div class= "textBox">
+              <ul>
+                <input type="button" onclick="alert('Thanks you for voting!')" value="Like" style = "width:100px; height:auto;">
+                <input type="button" onclick="alert('Thank you for voting!')" value="Dislike" style = "width:100px; height: auto;">
+                <form>
+                <label><h2>Description</h2></label>
+              </form>
+
+
+            </ul>
+              <p>Mel sint affert ut, sensibus assueverit id sea.
+                Debitis constituam ad cum, et mundi atomorum pri, hinc movet
+                theophrastus eu ius. Sale recteque delicatissimi qui in. Solum torquatos id sea.
+                Cu nec harum oportere efficiantur, qui velit labores ut, albucius adipisci mel in.
+                Audire numquam salutatus ne cum, ad duo solet forensibus.>Mel sint affert ut, sensibus assueverit id sea.
+                  Debitis constituam ad cum, et mundi atomorum pri, hinc movet
+                  theophrastus eu ius. Sale recteque delicatissimi qui in. Solum torquatos id sea.
+                  Cu nec harum oportere efficiantur, qui velit labores ut, albucius adipisci mel in.
+                  Audire numquam salutatus ne cum, ad duo solet forensibus.</p>
+                <p>Mel sint affert ut, sensibus assueverit id sea.
+                  Debitis constituam ad cum, et mundi atomorum pri, hinc movet
+                  theophrastus eu ius. Sale recteque delicatissimi qui in. Solum torquatos id sea.
+                  Cu nec harum oportere efficiantur, qui velit labores ut, albucius adipisci mel in.
+                  Audire numquam salutatus ne cum, ad duo solet forensibus.
+                </p>
+                <p>Mel sint affert ut, sensibus assueverit id sea.
+                    Debitis constituam ad cum, et mundi atomorum pri, hinc movet
+                    theophrastus eu ius. Sale recteque delicatissimi qui in. Solum torquatos id sea.
+                    Cu nec harum oportere efficiantur, qui velit labores ut, albucius adipisci mel in.
+                    Audire numquam salutatus ne cum, ad duo solet forensibus.
+                </p>
+                
+                  <a href = "browseProjectsLogin.html"><h2>Browse More Projects</h2></a>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- section ends -->
+
+</div>
+
+</body>
+</html>
